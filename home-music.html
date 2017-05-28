@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Foundry Multi-purpose HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/theme-nearblack.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/font-dosis.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/custom/musicplayer.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body class="scroll-assist">
+  <div class="nav-container">
+    <a id="top"></a>
+    <nav class="absolute transparent">
+      <div class="nav-bar">
+        <div class="module left">
+          <a href="index.html">
+                            <img class="logo logo-light" alt="Foundry" src="img/logo-light.png" />
+                            <img class="logo logo-dark" alt="Foundry" src="img/logo-dark.png" />
+                        </a>
+        </div>
+        <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+          <i class="ti-menu"></i>
+        </div>
+        <div class="module-group right">
+          <div class="module left">
+            <ul class="menu">
+              <li>
+                <a href="#hola" class="inner-link" target="_self">¿Quienes Somos?</a>
+              </li>
+              <li>
+                <a href="#">Eventos</a>
+              </li>
+              <li>
+                <a href="#">Galeria</a>
+              </li>
+              <li>
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <!--end of menu module-->
+        </div>
+      </div>
+      <!--end of module group-->
+  </div>
+  </nav>
+  </div>
+  <div class="main-container">
+    <section class="fullscreen cover parallax image-bg overlay">
+      <!--<div class="background-image-holder">
+        <img alt="image" class="background-image" src="img/music1.jpg" />
+      </div>-->
+      <video autoplay loop style="width:100% ; height: 100%; min-width:100%; min-height:100%; object-fit: fill; preload=auto; position:absolute; z-index: -2000; " poster="img/music1.jpg">
+        <source src="https://player.vimeo.com/external/213904962.hd.mp4?s=ef9b8583c5c55c90823e56cc1c84e36b662bf940&profile_id=119" type="video/mp4">
+      </video>
+    <div style="position: absolute;top: 50px;left: 180px;">
+      <article class="screen" style='width: 300px;height: 440px;'>
+        <div class="coverImage"></div>
+        <div class="bodyPlayer"></div>
+        <div class="bar"></div>
+
+        <div class="info">
+          <div class='h4-musicplayer'>STRESSED OUT</div>
+          <div class='h3-musicplayer'>twenty one pilots - Blurryface</div>
+        </div>
+        <audio preload="auto" id="audio" controls>
+          <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3"/>
+          <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.ogg"/>
+	      </audio>
+        <table class="player">
+          <td><input type="checkbox" id="backward" /><label class="backward" for="backward"></label></td>
+          <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()" /><label class="play" for="play"></label></td>
+          <td><input type="checkbox" id="forward" /><label class="forward" for="forward"></label></td>
+        </table>
+        <div class="current">
+          <div class='h2-musicplayer'>STRESSED OUT</div>
+        </div>
+      </article>
+    </div>
+    </section>
+
+    <a id="hola" class="in-page-link"></a>
+    <section class="bg-primary pt160 pb160 pt-xs-80 pb-xs-80">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <h2 class="uppercase thin mb40 mb-xs-24">A different
+                                <br /> kind of sound.</h2>
+            <p class="mb64 mb-xs-24">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <ul class="mb0">
+              <li class="mb8">
+                <h5 class="uppercase inline-block mb0">Joe Swanson /&nbsp;</h5>
+                <span>Vocals, Lead Guitar</span>
+              </li>
+              <li class="mb8">
+                <h5 class="uppercase inline-block mb0">Amanda Sims /&nbsp;</h5>
+                <span>Bass</span>
+              </li>
+              <li class="mb8">
+                <h5 class="uppercase inline-block mb0">Rick Bohn /&nbsp;</h5>
+                <span>Keyboard</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+      <!--end of container-->
+    </section>
+    <section class="pt240 pb240 pt-xs-80 pb-xs-80 parallax">
+      <div class="background-image-holder">
+        <img alt="image" class="background-image" src="img/music2.jpg" />
+      </div>
+    </section>
+    <section class="bg-primary pt120 pb120 pt-xs-80 pb-xs-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0">
+            <h2 class="uppercase mb40 mb-xs-24 text-center">See Us</h2>
+            <hr class="mb40 mb-xs-24 fade-half">
+            <ul>
+              <li class="mb40 mb-xs-24">
+                <div class="overflow-hidden mb32">
+                  <div class="col-sm-4">
+                    <h4 class="uppercase pt8">24 Sep</h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6 class="uppercase mb0">Melbourne, AU</h6>
+                    <span>Rod Laver Arena</span>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a class="btn btn-sm btn-white mt8" href="#">Get Tickets</a>
+                  </div>
+                </div>
+                <hr class="fade-half mb0">
+              </li>
+              <li class="mb40 mb-xs-24">
+                <div class="overflow-hidden mb32">
+                  <div class="col-sm-4">
+                    <h4 class="uppercase pt8">28 Sep</h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6 class="uppercase mb0">Sydney, AU</h6>
+                    <span>Sydney Opera House</span>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a class="btn btn-sm btn-white mt8" href="#">Get Tickets</a>
+                  </div>
+                </div>
+                <hr class="fade-half mb0">
+              </li>
+              <li class="mb40 mb-xs-24">
+                <div class="overflow-hidden mb32">
+                  <div class="col-sm-4">
+                    <h4 class="uppercase pt8">29 Sep</h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6 class="uppercase mb0">Sydney, AU</h6>
+                    <span>Chinese Laundry</span>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a class="btn btn-sm btn-white mt8" href="#">Get Tickets</a>
+                  </div>
+                </div>
+                <hr class="fade-half mb0">
+              </li>
+              <li class="mb40 mb-xs-24">
+                <div class="overflow-hidden mb32">
+                  <div class="col-sm-4">
+                    <h4 class="uppercase pt8">2 Oct</h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6 class="uppercase mb0">Perth, AU</h6>
+                    <span>Fremantle Stadium</span>
+                  </div>
+                  <div class="col-sm-4 text-right">
+                    <a class="btn btn-sm btn-white mt8" href="#">Get Tickets</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0">
+            <h2 class="uppercase mb40 mb-xs-24 text-center">Hear Us</h2>
+            <hr class="mb40 mb-xs-24 fade-half">
+            <div class="embed-holder">
+              <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/9016594&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            </div>
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+      <!--end of container-->
+    </section>
+    <section class="pt0 pb120 pt-xs-0 pb-xs80 bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="uppercase large mb80 mb-xs-24">Follow Us</h2>
+            <ul class="list-inline social-list mb24 spread-children-large">
+              <li class="fade-on-hover">
+                <a href="#">
+                                        <i class="icon icon-lg ti-instagram"></i>
+                                    </a>
+              </li>
+              <li class="fade-on-hover">
+                <a href="#">
+                                        <i class="icon icon-lg ti-facebook"></i>
+                                    </a>
+              </li>
+              <li class="fade-on-hover">
+                <a href="#">
+                                        <i class="icon icon-lg ti-soundcloud"></i>
+                                    </a>
+              </li>
+              <li class="fade-on-hover">
+                <a href="#">
+                                        <i class="icon icon-lg ti-vimeo-alt"></i>
+                                    </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+      <!--end of container-->
+    </section>
+    <section class="pt0 pb0 bg-primary">
+      <div class="instafeed grid-gallery gapless" data-user-name="mrareweb">
+        <ul class="fade-on-hover"></ul>
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickr.js"></script>
+  <script src="js/flexslider.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/masonry.min.js"></script>
+  <script src="js/twitterfetcher.min.js"></script>
+  <script src="js/spectragram.min.js"></script>
+  <script src="js/ytplayer.min.js"></script>
+  <script src="js/countdown.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    var audio = document.getElementById('audio');
+    var playpause = document.getElementById("play");
+
+
+    function togglePlayPause() {
+      if (audio.paused || audio.ended) {
+        playpause.title = "Pause";
+        audio.play();
+      } else {
+        playpause.title = "Play";
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+
+</html>
